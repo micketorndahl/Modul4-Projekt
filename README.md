@@ -1,3 +1,5 @@
 # Modul4-Projekt
 
-## Eget Projekt (Mikael Torndahl)
+## Eget Projekt - Grundläggande JavaScript (GJP100) - Högskolan Väst
+
+### Student: Mikael Torndahl
