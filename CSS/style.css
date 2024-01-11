@@ -14,8 +14,13 @@ h6 {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  align-items: center;
   margin: 0.8rem;
   color: #eee;
+}
+
+h1 {
+  font-size: 1.7rem;
 }
 
 h2 {
@@ -24,22 +29,48 @@ h2 {
   margin: 2rem;
 }
 
+#namn {
+  font-size: 0.8rem;
+}
+
 .menyContainer {
   background-color: #0f163dee;
+  display: flex;
+  justify-content: space-between;
 }
 
 .huvudMeny {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  margin: 0 auto;
+  margin: 0 15rem;
 }
 
 .huvudMeny a {
+  display: relative;
   background-color: #0f163dee;
   color: #eee;
-  border: 1px solid #a2a2a2;
-  padding: 0.8rem;
+  border: 1px solid #c4c4c4;
+  padding: 1.5rem;
+  /* margin: 0.7rem 0; */
+}
+
+.huvudMeny a:hover {
+  transform: scale(1.1);
+  transition-duration: 0.2s;
+  transition-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  text-decoration: none;
+}
+
+.huvudMeny a:first-child {
+  background-color: #003c84;
+}
+
+.huvudMeny a:nth-child(2) {
+  background-color: #019ba3f7;
+}
+
+#topScore {
+  background-color: rgb(255, 252, 88);
 }
 
 #projektInfo {
@@ -55,16 +86,30 @@ h2 {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+  width: 80%;
+  height: 70vh;
 }
 
 #startKnapp {
-  padding: 1.2rem;
-  background-color: #151414ee;
+  padding: 1.5rem;
+  background-color: #0b6368f7;
+  border: 1px solid #c4c4c4;
+  border-radius: 3px;
   color: #eee;
+  cursor: pointer;
+  border-radius: 0.4rem;
+}
+
+#startKnapp:hover {
+  transform: scale(1.1);
+  transition: cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition-duration: 3s;
+  border-radius: 2rem;
 }
 
 canvas {
   border: 1px solid #d3d3d3;
   background-color: #f1f1f1;
-  width: 80%;
+  width: 100%;
+  height: 100%;
 }
