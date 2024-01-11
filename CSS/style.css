@@ -2,6 +2,7 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background-color: #042957ee;
   color: #eee;
+  min-height: 100vh;
 }
 
 h1,
@@ -21,17 +22,6 @@ h2 {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 1.5rem;
   margin: 2rem;
-}
-
-main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  height: 500px;
-  margin: 0 auto;
-  background-color: #0f163dee;
 }
 
 .menyContainer {
@@ -59,6 +49,14 @@ main {
   align-items: center;
 }
 
+#spelRuta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
 #startKnapp {
   padding: 1.2rem;
   background-color: #151414ee;
@@ -68,4 +66,5 @@ main {
 canvas {
   border: 1px solid #d3d3d3;
   background-color: #f1f1f1;
+  width: 80%;
 }

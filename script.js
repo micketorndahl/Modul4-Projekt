@@ -12,7 +12,7 @@ class SpelarEnhet {
     this.posX = posX;
     this.posY = posY;
     this.uppdatera = function (enhet) {
-      enhet = spelMiljo.context;
+      spelMiljo.context;
       enhet.fillStyle = farg;
       enhet.fillRect(this.posX, this.posY, this.bredd, this.hojd);
     };
@@ -28,8 +28,8 @@ const spelRuta = document.getElementById("spelRuta");
 const spelMiljo = {
   canvas: document.createElement("canvas"),
   starta: function () {
-    this.canvasBredd = 800;
-    this.canvasHojd = 600;
+    this.canvasBredd = 1200;
+    this.canvasHojd = 800;
     this.context = this.canvas.getContext("2d");
     spelRuta.append(this.canvas);
     this.frameNo = 0;
@@ -46,16 +46,20 @@ const spelMiljo = {
 const uppdateraSpelMiljo = () => {
   spelMiljo.rensa();
   spelare.nyPos();
-  spelare.uppdatera();
+  spelare.uppdatera(spelMiljo.context);
 };
 
 const startKnapp = document.getElementById("startKnapp");
+const projektHeader = document.getElementById("projektHeader");
+const info = document.getElementById("info");
 startKnapp.addEventListener("click", () => {
   startaSpel();
   startKnapp.style.display = "none";
+  projektHeader.style.display = "none";
+  info.style.display = "none";
 });
 
 function startaSpel() {
-  spelare = new SpelarEnhet(20, 20, "blue", 10, 120);
+  spelare = new SpelarEnhet(20, 20, "blue", 10, 70);
   spelMiljo.starta();
 }
