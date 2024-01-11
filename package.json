@@ -1,0 +1,12 @@
+{
+  "name": "modul4-projekt",
+  "version": "1.0.0",
+  "description": "Eget Projekt - Grundläggande JavaScript (GJP100) - Högskolan Väst",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Mikael Torndahl",
+  "license": "ISC"
+}
