@@ -21,7 +21,8 @@
   <div class="menyContainer">
     <h1 id="projektHeader">* Modul 4 * <span id="namn">Mikael Torndahl</span></h1>
     <nav class="huvudMeny">
-      <a href="topScore.html">TopScore</a>
+      <a href="#"
+         onclick="visaTopScore()">TopScore</a>
       <a href="analys.html">Analys</a>
 
     </nav>
@@ -31,20 +32,34 @@
 
   <section id="projektInfo">
 
+
     <h2>The obstacle game</h2>
-    <p id="info">Info om spel</p>
+    <p id="info">Förlytta dig genom upp/ner pilarna. Undvik hindrena och missilerna så länge som möjligt för högre
+      Score.</p>
     <button id="startKnapp">Starta spel</button>
   </section>
 
+  <div id="spelRuta">
 
-  <main id="spelRuta">
+    <canvas id="spelCanvas"
+            height="400"
+            width="800"></canvas>
+
+  </div>
+
+  <section id="highScoreTavla"
+           style="display:none">
+    <h2>Top 5 High Scores</h2>
+    <ul id="highScoreLista">
+
+
+    </ul>
+  </section>
 
 
 
-  </main>
-
-
-  <script src="script.js"></script>
+  <script src="
+            script.js"></script>
 </body>
 
 </html>
